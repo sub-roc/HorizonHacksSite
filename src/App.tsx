@@ -1,6 +1,6 @@
 import "./App.css";
-import Lottie, { LottieRefCurrentProps } from "lottie-react";
-import animationData from "./assets/Animation - 1728786951301.json";
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+import { LottieRefCurrentProps } from "lottie-react";
 import { useRef, useEffect } from "react";
 import Reveal from "./components/Reveal";
 import { motion } from "framer-motion";
@@ -27,32 +27,40 @@ function App() {
     <>
       <div className="screen">
         <motion.div
-          className="box-animation"
-          whileHover={{ scale: 1.2 }}
-          whileTap={{ scale: 0.8, borderRadius: "80%" }}
-          variants={icon}
-          initial="hidden"
-          animate="visible"
-          transition={{opacity: {duration: 0.5, delay: 3}}}
-          onTap={() => {
-            window.location.href =
-              "https://docs.google.com/document/d/1bIPB54qwW36ZnCl_whg5_fMRucPSJXIIOt7IWCoZv4w/edit?tab=t.0#heading=h.omw9gy62jmrh";
-          }}
+            className="box-animation"
+            whileHover={{scale: 1.2}}
+            whileTap={{scale: 0.8, borderRadius: "80%"}}
+            variants={icon}
+            initial="hidden"
+            animate="visible"
+            transition={{opacity: {duration: 0.5, delay: 3}}}
+            onTap={() => {
+              window.location.href =
+                  "https://docs.google.com/document/d/1bIPB54qwW36ZnCl_whg5_fMRucPSJXIIOt7IWCoZv4w/edit?tab=t.0#heading=h.omw9gy62jmrh";
+            }}
         >
           <h1 className="box-text">
             <a
-              style={{ color: "#BB6DD1" }}
-              href="https://docs.google.com/document/d/1bIPB54qwW36ZnCl_whg5_fMRucPSJXIIOt7IWCoZv4w/edit?tab=t.0#heading=h.omw9gy62jmrh"
+                style={{color: "#BB6DD1"}}
+                href="https://docs.google.com/document/d/1bIPB54qwW36ZnCl_whg5_fMRucPSJXIIOt7IWCoZv4w/edit?tab=t.0#heading=h.omw9gy62jmrh"
             >
               Info
             </a>
           </h1>
+          <h1 className="box-text2">
+            <a
+                style={{color: "#FFFFFF"}}
+                href="https://docs.google.com/document/d/1bIPB54qwW36ZnCl_whg5_fMRucPSJXIIOt7IWCoZv4w/edit?tab=t.0#heading=h.omw9gy62jmrh"
+            >
+              Register
+            </a>
+          </h1>
         </motion.div>
         <motion.img
-          animate={{ y: "10vh" }}
-          transition={{ delay: 2.75 }}
-          className="hackclub"
-          src="/flag-orpheus-top.svg"
+            animate={{y: "10vh"}}
+            transition={{delay: 2.75}}
+            className="hackclub"
+            src="/flag-orpheus-top.svg"
         />
         <h1 className="text typed name">HorizonHacks</h1>
         <h1 className="text year">2024</h1>
@@ -61,10 +69,6 @@ function App() {
           src="/logo.svg"
           className="logo"
         />
-        <img src="/horizon.jpg" className="background animated-blur" />
-        <div className="scroll">
-          <Lottie lottieRef={lottieRef} animationData={animationData} />
-        </div>
       </div>
       <div className="block"></div>
       <div className="cover even">

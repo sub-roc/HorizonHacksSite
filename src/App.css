@@ -98,6 +98,15 @@ body,
   margin: auto;
   font-size: 3vw;
 }
+.box-text2 {
+  top: 50px; /* Adjust to your needs */
+  left: 25px; /* Adjust to your needs */
+  z-index: 1;
+  text-align: center;
+  margin: auto;
+  font-size: 3vw;
+  background: #BB6DD1;
+}
 
 .box-animation {
   position: absolute;
